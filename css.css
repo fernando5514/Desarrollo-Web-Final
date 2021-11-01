@@ -1,0 +1,8 @@
+
+#select{
+  font-weight: bold;
+  font-style: italic;
+}
+li p:hover{
+  color: #ffb400;
+}
