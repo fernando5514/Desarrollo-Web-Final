@@ -6,3 +6,18 @@
 li p:hover{
   color: #ffb400;
 }
+.formulario{
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+.formulario div{
+  margin-top: 7.5px;
+}
+.formulario button{
+  margin-bottom: 20px;
+}
+.formulario div h1{
+  font-weight:normal;
+  font-style:normal;
+}
