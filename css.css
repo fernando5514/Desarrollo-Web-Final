@@ -8,6 +8,7 @@ body{
 li p:hover{
   color: #ffb400;
 }
+/*modificar el formaulario*/
 .formulario{
   text-align: center;
   font-style: italic;
@@ -22,4 +23,60 @@ li p:hover{
 .formulario div h1{
   font-weight:normal;
   font-style:normal;
+}
+/*modificar las fotos del carousel*/
+.img_carousel{
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  opacity: 0.4;
+}
+.carousel_text{
+  font-style: arial;
+  color: white;
+  border-radius: 50px;
+  opacity: 1;
+  font-weight: bolder;
+}
+.carousel_text h5{
+  font-size: 150%;
+}
+.carousel_text p{
+  font-size: 115%;
+}
+.rocars :hover{
+  background-color: black;
+  border-radius: 1000px;
+}
+.main h1{
+  margin-top: 50px;
+  font-style: arial;
+  letter-spacing: 3px;
+  font-weight: 1000;
+}
+
+.main p{
+  margin-top: 50px;
+  font-size: 150%;
+}
+.fotorocar{
+  background-color: white;
+  margin-right: 1%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.vermas button{
+  font-weight: 500;
+  font-size: 120%;
+  border-radius: 50rem;
+  background-color: #c0392b;
+  color: white;
+  box-shadow: 0px 0px 5px 1px black;
 }
