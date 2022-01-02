@@ -80,3 +80,49 @@ li p:hover{
   color: white;
   box-shadow: 0px 0px 5px 1px black;
 }
+
+/*timeline*/
+
+.title_timeline {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.title_timeline p {
+	color: #2c3e50;
+  font-size: 150%;
+  font-weight: 500;
+}
+.title_timeline h4 {
+	text-transform: capitalize;
+	font-size: 250%;
+	margin-bottom: 15px;
+	font-weight: 800;
+}
+.timeline_espacio div{
+  margin-bottom: 20px;
+}
+.borde1{border-right: solid;
+border-color: #8e44ad;}
+
+.timeline_image{
+  border-radius: 1rem;
+}
+.aqui{
+  width: 6rem;
+}
+.contenido_timeline span{
+  color: #ecf0f1;
+  font-weight: 700;
+  font-size: 150%:
+}
+.contenido_timeline h4{
+  text-transform: capitalize;
+  font-size: 150%;
+  font-weight: 800;
+
+}
+.contenido_timeline p{
+  font-size: 110%;
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+}
