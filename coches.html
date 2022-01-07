@@ -6,9 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="IMG/cabecera.png">
+  <!-- Animaciones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="CSS/css.css">
   <title>AutoCar</title>
 </head>
 
@@ -91,11 +97,136 @@
       </div>
     </div>
   </nav>
+  <div class="container">
+    <div class="gal animate__animated animate__backInDown" align="center">
+      <h1>Nuestros coches</h1>
+      <p>Te presentamos nuestros coches en stock a día de hoy</p>
+    </div>
+    <div class="row" align="center">
+      <div class="col-12">
+        <h3 style="text-transform: capitalize;">Filtros de búsqueda</h3>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#familiar" aria-expanded="true" aria-controls="familiar">Familiares</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#deportivo" aria-expanded="true" aria-controls="deportivo">Deportivos</button>
+      </div>
+      <div class="col-4">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#clasico" aria-expanded="true" aria-controls="clasico">Clásicos</button>
+      </div>
+
+    </div>
+    <div class="row galeria ">
+      <div class="col-md-6 col-sm-12 show" id="clasico">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria1.jpg);">
+          <div class="texto_gal">
+            <h1>6.000€</h1>
+            <h3>SEAT 600 (1957)</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="familiar">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria2.jpeg);">
+          <div class="texto_gal">
+            <h1>23.100€</h1>
+            <h3>Kia Ceed Tourer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="familiar">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria3.jpg);">
+          <div class="texto_gal">
+            <h1>23.100€</h1>
+            <h3>Toyota Corolla Touring Sports Híbrido</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="clasico">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria4.jpg);">
+          <div class="texto_gal">
+            <h1>60.000€</h1>
+            <h3>Honda NSX</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="deportivo">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria5.jpg);">
+          <div class="texto_gal">
+            <h1>36.750€</h1>
+            <h3>Mazda MX-5 RF</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="deportivo">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria6.jpeg);">
+          <div class="texto_gal">
+            <h1>109.000€</h1>
+            <h3>BMW M4 Competition 2021</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="deportivo">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria7.jpeg);">
+          <div class="texto_gal">
+            <h1>65.970€</h1>
+            <h3>Ford Mustang Mach 1</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="familiar">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria8.jpg);">
+          <div class="texto_gal">
+            <h1>27.550€</h1>
+            <h3>Hyundai Tucson</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="clasico">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria9.jpg);">
+          <div class="texto_gal">
+            <h1>23.000€</h1>
+            <h3>Lancia Delta HF Integrale</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="deportivo">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria10.jpg);">
+          <div class="texto_gal">
+            <h1>105.970€</h1>
+            <h3>Tesla Model s</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="familiar">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria11.jpg);">
+          <div class="texto_gal">
+            <h1>36.200€</h1>
+            <h3>BMW Serie 2 Gran Coupe 218d</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12  show" id="familiar">
+        <div class="fondo_gal" style="background-image: url(IMG/galeria12.jpg);">
+          <div class="texto_gal">
+            <h1>22.812€</h1>
+            <h3>Mazda Mazda3 Sedán</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="" align="center">
+    <blockquote class="twitter-tweet"><p lang="es" dir="ltr">¿Cuál es el coche de vuestros sueños?</p>&mdash; Fernando Ramírez (@_ferkitkat_) <a href="https://twitter.com/_ferkitkat_/status/1479143469209817093?ref_src=twsrc%5Etfw">January 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js.js"></script>
+  <script type="text/javascript" src="JS/s.js"></script>
 </body>
 
 </html>

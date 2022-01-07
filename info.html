@@ -6,15 +6,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="IMG/cabecera.png">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <!-- Animaciones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="CSS/css.css">
   <title>AutoCar</title>
 </head>
 
-<body>  <!-- creo el formulario dando la clase required para obligar al usuario a introducirlo-->
+<body>
+  <!-- creo el formulario dando la clase required para obligar al usuario a introducirlo-->
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow">
     <div class="container-fluid">
       <div class="d-flex flex-grow-1">
@@ -93,122 +98,154 @@
       </div>
     </div>
   </nav>
-  <div class="container animate__animated animate__fadeInUpBig" style="margin-top: 2%">
+  <div class="container animate__animated animate__fadeInUpBig" id="espacio">
     <form class="row g-4 justify-content-center needs-validation" id="form1" action="https://postman-echo.com/get" method="get" novalidate>
-    <div class="col-sm-8 col-md-6 col-lg-4 bg-light rounded shadow formulario">
-      <div class="col-12">
-        <img width="100px" src="IMG/formulario.png" alt="logo">
-      </div>
-      <div class="col-12">
-        <h1 style="text-decoration: underline">CONTÁCTANOS</h1>
-      </div>
-      <div class="col-12">
-        <div class="form-floating">
-          <input class="form-control" type="text" name="nombre" id="input-name" placeholder="Nombre" required>
-          <label for="input-name">Nombre</label>
+      <div class="col-sm-8 col-md-6 col-lg-4 bg-light rounded shadow formulario">
+        <div class="col-12">
+          <img width="100px" src="IMG/formulario.png" alt="logo">
         </div>
-      </div>
-      <div class="col-12">
-        <div class="form-floating">
-          <input class="form-control" type="text" name="apellidos" id="input-apellidos" placeholder="Apellidos" required>
-          <label for="input-apellidos">Apellidos</label>
+        <div class="col-12">
+          <h1 style="text-decoration: underline">CONTÁCTANOS</h1>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="form-floating">
-          <input class="form-control" type="number" name="telefono" id="input-tel" placeholder="123456789" min="100000000" max="999999999" required>
-          <label for="input-tel">Número de teléfono</label>
-          <div class="invalid-feedback">
-            <p>Introduzca un número válido XXX-XX-XX-XX</p>
-          </div>
-          <div class="valid-feedback">
-            <p>¡Válido!</p>
+        <div class="col-12">
+          <div class="form-floating">
+            <input class="form-control" type="text" name="nombre" id="input-name" placeholder="Nombre" required>
+            <label for="input-name">Nombre</label>
           </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="form-floating">
-          <input type="text" class="form-control" name="dirección" id="input-calle" placeholder="Castellana" required>
-          <label for="input-calle" class="form-label">Dirección</label>
+        <div class="col-12">
+          <div class="form-floating">
+            <input class="form-control" type="text" name="apellidos" id="input-apellidos" placeholder="Apellidos" required>
+            <label for="input-apellidos">Apellidos</label>
+          </div>
         </div>
-      </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <input class="form-control" type="number" name="telefono" id="input-tel" placeholder="123456789" min="100000000" max="999999999" required>
+            <label for="input-tel">Número de teléfono</label>
+            <div class="invalid-feedback">
+              <p>Introduzca un número válido XXX-XX-XX-XX</p>
+            </div>
+            <div class="valid-feedback">
+              <p>¡Válido!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <input type="text" class="form-control" name="dirección" id="input-calle" placeholder="Castellana" required>
+            <label for="input-calle" class="form-label">Dirección</label>
+          </div>
+        </div>
 
-      <div class="col-12">
-        <label for="comunidad" class="form-label">Comunidad</label>
-        <select class="form-select" name="comunidad" id="comunidad" required>
-          <option selected disabled value="">...</option>
-          <option>Andalucía</option>
-          <option>Aragón</option>
-          <option>Asturias</option>
-          <option>Cantabria</option>
-          <option>Comunidad de Madrid</option>
-          <option>Castilla la Mancha</option>
-          <option>Castilla y León</option>
-          <option>Cataluña</option>
-          <option>Comunidad Valenciana</option>
-          <option>Extremadura</option>
-          <option>Galicia</option>
-          <option>La Rioja</option>
-          <option>Murcia</option>
-          <option>Navarra</option>
-          <option>País Vasco</option>
-        </select>
-        <div class="invalid-feedback">
-          <p>Seleccione una comunidad</p>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="form-floating">
-          <input type="number" class="form-control" name="Codigo Postal" id="CP" placeholder="12345" min="10000" max="99999" required>
-          <label for="CP" >Código Postal</label>
+        <div class="col-12">
+          <label for="comunidad" class="form-label">Comunidad</label>
+          <select class="form-select" name="comunidad" id="comunidad" required>
+            <option selected disabled value="">...</option>
+            <option>Andalucía</option>
+            <option>Aragón</option>
+            <option>Asturias</option>
+            <option>Cantabria</option>
+            <option>Comunidad de Madrid</option>
+            <option>Castilla la Mancha</option>
+            <option>Castilla y León</option>
+            <option>Cataluña</option>
+            <option>Comunidad Valenciana</option>
+            <option>Extremadura</option>
+            <option>Galicia</option>
+            <option>La Rioja</option>
+            <option>Murcia</option>
+            <option>Navarra</option>
+            <option>País Vasco</option>
+          </select>
           <div class="invalid-feedback">
-            <p>Introduzca un código postal válido XXXXX</p>
-          </div>
-          <div class="valid-feedback">
-            <p>¡Válido!</p>
+            <p>Seleccione una comunidad</p>
           </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="form-floating">
-          <input class="form-control" type="email" name="correo" id="input-mail" placeholder="name@example.com" required>
-          <label for="input-mail">Correo electrónico</label>
-          <div class="invalid-feedback">
-            <p>Introduzca un correo name@example.com</p>
-          </div>
-          <div class="valid-feedback">
-            <p>¡Válido!</p>
+        <div class="col-12">
+          <div class="form-floating">
+            <input type="number" class="form-control" name="Codigo Postal" id="CP" placeholder="12345" min="10000" max="99999" required>
+            <label for="CP">Código Postal</label>
+            <div class="invalid-feedback">
+              <p>Introduzca un código postal válido XXXXX</p>
+            </div>
+            <div class="valid-feedback">
+              <p>¡Válido!</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="check" required>
-          <label class="form-check-label" for="check">Acepto que puedan comunicarse a través del teléfono o email</label>
+        <div class="col-12">
+          <div class="form-floating">
+            <input class="form-control" type="email" name="correo" id="input-mail" placeholder="name@example.com" required>
+            <label for="input-mail">Correo electrónico</label>
+            <div class="invalid-feedback">
+              <p>Introduzca un correo name@example.com</p>
+            </div>
+            <div class="valid-feedback">
+              <p>¡Válido!</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="">
-        <button class="btn btn-primary" type="submit" name="button">Enviar</button>
-      </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check" required>
+            <label class="form-check-label" for="check">Acepto que puedan comunicarse a través del teléfono o email</label>
+          </div>
+        </div>
+        <div class="">
+          <button class="btn btn-primary" type="submit" name="button">Enviar</button>
+        </div>
 
-    </div>
+      </div>
     </form>
   </div>
-  <div class="container">
+  <div class="container" id="espacio">
     <div class="row">
-      <div class="col-12" align="center">
-        <h1>¿QUIÉNES SOMOS?</h1>
-
+      <div class="col-12 texto" align="center">
+        <h1>¿QUIÉN SOY?</h1>
       </div>
-
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6" align="center">
+        <img class="img-fluid" src="IMG/fernando.jpg" alt="Foto alumno">
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 texto" id="espacio" align="left">
+        <p><strong>¡Es una excelente pregunta!</strong> Me llamo Fernando Ramírez Fernández,fundador y director ejecutivo de AutoCar.</p>
+          <p><strong>- Somos un concesionario de coches nuevos, de ocasión y viejas glorias que todo el mundo desea.</strong> Si estás buscando el coche de tus sueños, este es tu sitio.</p>
+          <p><strong>-</strong> Contamos con los mayores profesionales del sector en la tasación y comprobación de todos los vehículos.</p>
+          <p><strong>-</strong> Trabajamos mediante subastas con lista de espera a las que apuntarse mediante el formulario situado arriba. </p>
+          <p><strong>-</strong> Nos localizamos en Yeles - Toledo</p>
+          <p> <strong>Nuestro correo: </strong><a href="mailto:tienda%40autocar.com">tienda&commat;autocar.com</a> </p><!--Utilizo el codigo ASCII para codificar con el código porciento-->
+      </div>
+      <div class="col-12 " id="espacio" align="center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.9480643291326!2d-3.8060536289327795!3d40.12116087184551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41f7203d7b14e9%3A0xe3b76502a63fdfca!2sYeles!5e0!3m2!1ses!2ses!4v1641226409325!5m2!1ses!2ses" width="75%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="col-12 texto">
+        <h3>Atención al cliente</h3>
+        <p> <strong>Para cualquier otra duda, consulta o sugerencia no dudes en contactarnos mediante cualquiera de estos canales:</strong> </p>
+        <p>• Correo electrónico: <a href="mailto:tienda&commat;autocar&period;com">tienda&commat;autocar&period;com</a> </p> <!--aqui uso una codificación con entidades de HTML para los caracteres del correo-->
+        <p>• Llamadas: disponible de Lun. a Vie. de 09:00 a 14:00 y 15:30 a 18:30</p>
+        <p>• Teléfono de Atención al cliente: Como consecuencia de las medidas sanitarias, la atención telefónica queda deshabilitada temporalmente.</p>
+      </div>
+      <div class="col-12 texto" align="center" style="margin-top:50px;text-decoration: underline;">
+        <h1>NUESTROS SERVICIOS</h1>
+      </div>
+      <div class="col-12 texto">
+        <h2>Compra de vehículo</h2>
+        <p>Compramos su coche viejo al mejor precio garantizado, traiga su coche y lo tasaremos sin compromiso</p>
+        <img class="img-fluid"src="IMG/servicio1.jpg" alt="">
+        <h2>Modificación de vehículos</h2>
+        <p>De la mano de RoCars podremos modificar su vehículo en el taller con los bodykits de mayor calidad del mercado</p>
+        <img class="img-fluid" src="IMG/servicio2.jpg" alt="taller tuning">
+        <h2>Subasta de grandes coches</h2>
+        <p>Mediante subastas ponemos a su disposición los coches más deseados del mercado, sea de la época que sea</p>
+        <img class="img-fluid" src="IMG/servicio3.png" alt="">
+      </div>
     </div>
-
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js.js"></script>
+  <script type="text/javascript" src="JS/js.js"></script>
 </body>
 
 </html>
